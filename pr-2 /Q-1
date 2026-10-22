@@ -1,0 +1,51 @@
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+public:
+    string brand;
+    string color;
+    string model;
+    int year;
+    int price;
+
+    void input()
+    {
+        cout << "Enter car brand: ";
+        cin >> brand;
+
+        cout << "Enter car color: ";
+        cin >> color;
+
+        cout << "Enter car model: ";
+        cin >> model;
+
+        cout << "Enter car year: ";
+        cin >> year;
+
+        cout << "Enter car price: ";
+        cin >> price;
+    }
+
+    void display()
+    {
+        cout << "\n----- Car Details -----" << endl;
+        cout << "Brand: " << brand << endl;
+        cout << "Color: " << color << endl;
+        cout << "Model: " << model << endl;
+        cout << "Year: " << year << endl;
+        cout << "Price: " << price << endl;
+    }
+};
+
+int main()
+{
+    Car c;
+
+    c.input();
+    c.display();
+
+    return 0;
+}
